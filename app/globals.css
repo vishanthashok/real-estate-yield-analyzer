@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background-color: #0f172a;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: none;
+  background: #0f172a;
+  color: white;
+}
+
+.metric {
+  font-size: 22px;
+  font-weight: bold;
+  color: #10b981;
+}
+
+.ticker {
+  background: #111827;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid #1f2937;
+}
+
+.ticker-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 30s linear infinite;
+}
+
+.ticker a {
+  color: #38bdf8;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
